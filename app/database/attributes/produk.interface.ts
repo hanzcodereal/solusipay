@@ -1,0 +1,47 @@
+import { ProviderAttributes } from "./provider.interface";
+
+export interface ProdukAttributes {
+  kode: string;
+  nama: string | null;
+  aktif: number;
+  gangguan: number;
+  kosong: number;
+  harga_beli: number | null;
+  harga_jual1: number | null;
+  harga_jual2: number | null;
+  harga_jual3: number | null;
+  harga_jual4: number | null;
+  nominal: number | null;
+  tanpa_kode: number | null;
+  prepaid: number | null;
+  pospaid: number | null;
+  voucher: number | null;
+  unit: number | null;
+  jumlah_Stok_unit: number | null;
+  kode_provider: string | null;
+  kode_hlr: string | null;
+  kode_area: string | null;
+  rumus_harga: string | null;
+  catatan: string | null;
+  autoOn: string;
+  autoOff: string;
+  autoOnOff: number;
+  max_unit: number | null;
+  min_unit: number | null;
+  param: string | null;
+  aktifkanCashback: number;
+  limitWajib: number | null;
+  cashback: number | null;
+  tglberakhir: Date | null;
+  harga_permanen: number;
+  info_enduser: number;
+  rumus_produk: number | null;
+  min_qty: number | null;
+  max_qty: number | null;
+  poin: number | null;
+  kode_kategori: number | null;
+  ts: Date | null;
+  modified: Date | null;
+  label?: string | null;
+  provider?: ProviderAttributes | null;
+}
